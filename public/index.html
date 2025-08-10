@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Social Media</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="wrapper">
+    <h1>Mini Social Media</h1>
+    <div id="auth">
+      <input id="loginUser" placeholder="Username" autocomplete="username">
+      <input id="loginPass" type="password" placeholder="Password" autocomplete="current-password">
+      <button id="loginBtn">Log In</button>
+      <button id="regBtn">Register</button>
+      <div id="authMsg" style="color:#c14;margin-top:8px;"></div>
+    </div>
+    <div id="main" style="display:none;">
+      <div id="left">
+        <div id="profile">
+          <b>Logged in as:</b> <span id="profileName"></span>
+        </div>
+        <div id="friendsWrap">
+          <b>Friends:</b>
+          <div id="friends"></div>
+          <input id="addFriendInput" placeholder="Add friend by username">
+          <button id="addFriendBtn">Add Friend</button>
+        </div>
+      </div>
+      <div id="center">
+        <div id="feedWrap">
+          <form id="postForm">
+            <textarea id="postText" placeholder="What's happening?" required></textarea>
+            <button id="postBtn" type="submit">Post</button>
+          </form>
+          <div id="feed"></div>
+        </div>
+      </div>
+      <div id="right">
+        <div id="chatWrap" style="display:none;">
+          <div id="chatTitle"></div>
+          <div id="chatMsgs"></div>
+          <input id="chatInput" placeholder="Type a message...">
+          <button id="chatSendBtn">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
