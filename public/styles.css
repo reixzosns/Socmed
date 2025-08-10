@@ -1,0 +1,27 @@
+body { margin:0; background:#f3f5f8; color:#234; font-family:sans-serif;}
+#wrapper { max-width:900px; margin:36px auto; background:#fff; border-radius:20px; box-shadow:0 4px 32px #0002; padding:30px;}
+h1 { text-align:center; margin-bottom:16px;}
+#auth { text-align:center; margin-bottom:22px;}
+#auth input { font-size:17px; border-radius:6px; border:1px solid #ccd; padding:8px; margin:0 4px; }
+#auth button { padding:8px 16px; border-radius:6px; border:none; background:#39f; color:#fff; font-size:16px; cursor:pointer; margin:0 3px;}
+#main { display:flex; gap:3%; }
+#left, #center, #right { flex:1; }
+#profile { margin-bottom:18px;}
+#friendsWrap { background:#eef; padding:12px; border-radius:10px; margin-bottom:18px;}
+#friends { margin-bottom:7px;}
+.friendItem { background:#def; border-radius:7px; padding:6px 12px; margin-bottom:6px; cursor:pointer;}
+.friendItem.selected { background:#fa5; color:#fff;}
+#feedWrap { background:#f9f8ff; border-radius:13px; padding:16px 14px; margin-bottom:14px;}
+#postForm textarea { width:97%; min-height:38px; font-size:15px; border-radius:7px; border:1px solid #ccd; padding:7px;}
+#postForm button { padding:6px 17px; border-radius:7px; border:none; background:#39f; color:#fff; font-size:15px; cursor:pointer; margin-top:5px;}
+#feed { margin-top:16px;}
+.post { background:#eaf; margin-bottom:12px; padding:11px 14px; border-radius:10px;}
+.post .meta { font-size:12px; color:#789;}
+#chatWrap { background:#f6fce9; border-radius:13px; padding:13px 14px;}
+#chatTitle { font-weight:bold; margin-bottom:10px;}
+.chatMsg { background:#fff; margin-bottom:8px; padding:7px 12px; border-radius:8px;}
+.chatMsg.me { background:#d9f7e0;}
+.chatMsg .meta { font-size:11px; color:#789;}
+#chatInput { width:80%; font-size:15px; border-radius:7px; border:1px solid #ccd; padding:5px;}
+#chatSendBtn { padding:6px 14px; border-radius:7px; border:none; background:#5fae6b; color:#222; font-size:15px; cursor:pointer;}
+@media (max-width:900px) { #wrapper { max-width:98vw; padding:8vw 2vw; } #main { flex-direction:column; } }
